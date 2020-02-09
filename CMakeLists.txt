@@ -2,8 +2,11 @@ cmake_minimum_required(VERSION 3.12)
 
 project(ibmswtpm2 VERSION 1563 LANGUAGES C)
 
+list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
+
 include (GNUInstallDirs)
 include(TestBigEndian)
+include(ConanAutoSetup)
 
 if(APPLE OR MSVC)
  include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
