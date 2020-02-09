@@ -4,7 +4,7 @@ project(ibmswtpm2 VERSION 1563 LANGUAGES C)
 
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 
-include (GNUInstallDirs)
+include(GNUInstallDirs)
 include(TestBigEndian)
 include(ConanAutoSetup)
 
